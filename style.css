@@ -23,7 +23,7 @@ h1{
     height:3px;
 }
 
-.abc{
+.input-box{
     text-align: center;
     height: 45px;
     margin-bottom: 10px;
@@ -45,4 +45,9 @@ h1{
 .entry{
     padding-top: 25px;
     text-align: center;
+}
+
+.result-box{
+    max-height: 300px;
+    overflow-y:scroll;
 }
