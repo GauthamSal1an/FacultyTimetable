@@ -1,0 +1,43 @@
+*{
+    background-color: rgb(0, 3, 12);
+}
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+}
+
+h1{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: rgb(255, 204, 145);
+    font-size: 44px;
+}
+
+.navbor{
+    height:3px;
+}
+
+.abc{
+    text-align: center;
+    height: 45px;
+    margin-bottom: 10px;
+    width: 350px;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+}
+
+.button{
+    margin-top: 10px;;
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-color: rgb(255, 183, 96);
+    border-radius: 25px;
+}
