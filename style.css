@@ -16,7 +16,7 @@ h1{
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
     color: rgb(255, 204, 145);
-    font-size: 44px;
+    font-size: 55px;
 }
 
 .navbor{
@@ -40,4 +40,9 @@ h1{
     color: white;
     background-color: rgb(255, 183, 96);
     border-radius: 25px;
+}
+
+.entry{
+    padding-top: 25px;
+    text-align: center;
 }
