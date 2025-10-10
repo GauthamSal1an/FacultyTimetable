@@ -31,7 +31,7 @@ function display(result){
         return "<li onclick=selectInput(this)>"+list+"</li>"
     })
 
-    resultsBox.innerHTML = "<ul>" + content + "</ul>";
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 }
 
 function selectInput(list){
