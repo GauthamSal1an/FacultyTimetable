@@ -1,22 +1,42 @@
 *{
-    background-color: rgb(0, 3, 12);
+    background-color: rgb(255, 255, 255);
 }
 
-.navBar{
-    display: flex;
-    justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-}
+
 
 h1{
     margin-top: 8px;
     margin-bottom: 0px;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
-    color: rgb(255, 204, 145);
+    color: rgb(169, 36, 214);
     font-size: 55px;
+}
+
+.navBar{
+    display: flex;
+    justify-content: space-between; /* This pushes title left and links right */
+    align-items: center;            /* This vertically centers them */
+    padding: 10px 30px;             /* Add some padding */
+    background-color: white;        /* White background as requested */
+}
+
+.navbor{
+    height: 3px;
+    border: none; /* Remove default <hr> border */
+    background-color: rgb(255, 204, 145); /* Use your accent color */
+    margin-top: 0; /* Make it stick to the bottom of the header */
+}
+
+.navBar h1 {
+    color: rgb(0, 3, 12); /* Change text to dark for the white background */
+    font-size: 40px;      /* Make it a bit smaller */
+    margin: 0;            /* Remove default margins */
+    text-align: left;     /* Ensure it's left-aligned */
+    
+    /* These properties ensure it doesn't get pushed out */
+    flex-shrink: 0; /* Prevents the h1 from shrinking if space is tight */
+    line-height: 1; /* Ensures consistent vertical alignment */
 }
 
 .navbor{
@@ -29,11 +49,12 @@ h1{
     margin-bottom: 10px;
     width: 350px;
     border-radius: 25px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
 }
 
 .button{
+    margin-top: 10px;
     margin-top: 10px;
     height: 50px;
     width: 150px;
@@ -41,10 +62,12 @@ h1{
     background-color: rgb(255, 183, 96);
     border-radius: 25px;
     margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .entry{
     padding-top: 25px;
+    text-align: center;
     text-align: center;
     text-align: center;
 }
@@ -57,7 +80,7 @@ h1{
     margin: 0 auto;
     left: 0;
     right: 0;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 1000;
     font-family: sans-serif;
 }
@@ -82,14 +105,63 @@ h1{
 .table {
     width: 80%;
     margin: 20px auto;
-    border: dashed white 2px;
+    border: dashed rgb(255, 183, 96) 2px;
     font-family: Arial, sans-serif;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
 th , td{
-    border: 1px solid white;
+    border: 1px solid rgb(255, 183, 96);
     padding: 8px;
-    padding-top: 10px;;
+    padding-top: 10px;
+    color: black;
+}
+
+.auth-links {
+    display: flex;
+    gap: 10px; 
+}
+
+.auth-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Arial, sans-serif; 
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    background-color: rgb(9, 115, 202); 
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.auth-link:hover {
+    background-color: rgb(230, 160, 70); 
+}
+
+.foot {
+    background-color: rgb(255, 183, 96);
+    padding: 20px 0; 
+    text-align: center; 
+    width: 100%; 
+    
+    color: rgb(0, 3, 12); 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 105px;
+}
+
+
+.foot p {
+    margin: 0;
+    background-color: rgb(255, 183, 96);
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px;       
+    margin: 60px auto;      
+    padding: 20px;         
+    text-align: center;     
 }

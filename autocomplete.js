@@ -4,8 +4,7 @@ let availableKeywords = [
     'Mr. Piyush Goel',
     'Dr. Venkataramana Bhat P',
     'Dr. Sarika Hegde',
-    'Dr. Sudeepa K B',
-    'Dr. Shashank Shetty'
+    'Dr. Sudeepa K B'
 ];
 
 const resultsBox = document.querySelector(".result-box");
