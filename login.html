@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faculty Timetable - NMAMIT</title>
+    <title>Faculty Timetable - NMAMIT (Login)</title>
     <link rel = "stylesheet" href = "style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
 <body>
     <div class = "navBar">
         <div class = "head">
             <h1>Faculty Timetable</h1>
         </div>
-        
-        <div class="auth-links">
-            <a href="login.html" class="auth-link">Log Out</a>
-        </div>
     </div>
     <hr class = "navbor">
-
-    <div class = "entry">
-        <input type="text" class="input-box" id="input-box"placeholder="Enter Faculty Name" required><br>
-        <div class="result-box"></div>
-        <button class="button" onclick="getTimetable()">Get Timetable</button>
-    </div>
-
-    <h1 class="Facultyname" style="font-size: 30px;"></h1>
-
-    <div class="result">
-
+    
+     <div class="login-container">
+        <h1>Login</h1>
+        <form name="login" action="index.html">
+            <input type="text" class="input-box" placeholder="USN" required><br>
+            <input type="password" class="input-box" placeholder="Password" required><br>
+            <input type="reset" class="button" value="Reset">
+            <input type="submit" class="button" value="Submit">
+        </form>
     </div>
 
     <footer>
@@ -39,6 +34,6 @@
     </footer>
 
     <script src="autocomplete.js"></script>
-</head>
+
 </body>
 </html>
